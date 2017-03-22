@@ -12,9 +12,9 @@ import { LoginPage } from '../../pages/login/login';
   templateUrl: 'menu-card.html'
 })
 export class MenuCardComponent {
- 
+
   constructor(public appCtrl: App) {
-  }
+  }        
 
   openPage(page) {
     if(page == 'login'){

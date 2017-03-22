@@ -4,33 +4,45 @@
   See http://ionicframework.com/docs/v2/components/#navigation for more info on
   Ionic pages and navigation.
 -->
-<ion-header>
+<!--<ion-header>
     <ion-navbar color="red">
         <button ion-button menuToggle>
             <ion-icon name="menu"></ion-icon>
         </button>
         <ion-title>login</ion-title>
     </ion-navbar>
-</ion-header>
-<ion-content>
-    <div >
-        <form>
+</ion-header>-->
+<ion-content class="bkg-login">
+    <div>
+        <form class="top-10pc">
             <ion-row>
                 <ion-col>
                     <ion-list inset>
-                        <ion-item>
+                        <ion-item class="logo-login">
+                            <img src="../assets/logo.svg" alt="">
+                            <h2>Road</h2>
+                        </ion-item>
+                        <ion-item color="dark-bkg" class="item-login">
                             <ion-input type="email" placeholder="Email" name="email" required></ion-input>
                         </ion-item>
-                        <ion-item>
+                        <ion-item color="dark-bkg" class="item-login">
                             <ion-input type="password" placeholder="Password" name="password" required></ion-input>
                         </ion-item>
+                        <p>
+                            <a href="" title="sign-in" class="link-a text-center">¿No recuerdas tus datos de acceso?</a>
+                        </p>
                     </ion-list>
                 </ion-col>
             </ion-row>
             <ion-row>
-                <ion-col>
-                    <button ion-button color="indigo">Login</button>
-                    <button ion-button color="indigo">Create New Account</button>
+                <ion-col class="text-center">
+                    <button ion-button large color="indigo" class="btn-login">Inicia sesión</button>
+                </ion-col>
+            </ion-row>
+            <ion-row class="top-1em">
+                <ion-col class="text-center">
+                    <p class="line-text"> O </p>
+                    <a href="" title="sign-in" class="link-a font-13em">Crea una cuenta</a>
                 </ion-col>
             </ion-row>
         </form>
